@@ -53,6 +53,26 @@ def calcula_pontos_sequencia_baixa(lista):
 
     return 0
 
+
+def calcula_pontos_sequencia_alta(lista):
+    v = []
+    for x in lista:
+        if x not in v:
+            v.append(x)
+    for i in range(len(v)):
+        for j in range(i + 1, len(v)):
+            if v[i] > v[j]:
+                temp = v[i]
+                v[i] = v[j]
+                v[j] = temp
+    if len(v) < 5:
+        return 0
+    for i in range(len(v) - 4):
+        if v[i] == v[i+1] - 1 and v[i+1] == v[i+2] - 1 and v[i+2] == v[i+3] - 1 and v[i+3] == v[i+4] - 1:
+            return 30
+
+    return 0
+
         
 
 
