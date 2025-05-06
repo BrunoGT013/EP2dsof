@@ -79,16 +79,15 @@ def calcula_pontos_full_house(lista):
         else:
             for i in range(len(valores)):
                 if valores[i] == x:
-                    contagens[i] =+ 1
+                    contagens[i] += 1
 
-    if len(contagens) == 3:
+    if len(contagens) == 2:
         if (contagens[0] == 3 and contagens[1] == 2) or (contagens[0] == 2 and contagens[1] == 3):
             soma = 0
             for x in lista:
-                soma = soma + 1 
+                soma += x
             return soma
 
     return 0
-
 
 
