@@ -34,11 +34,6 @@ def calcula_pontos_soma(dados):
     return total
 
 
-# def calcula_pontos_sequencia_baixa(dados):
-#     if 1 == dados and 2 == dados and 3 == dados and 4 == dados:
-#         return 15
-#     else:
-#         return 0
 def calcula_pontos_sequencia_baixa(lista):
     v = []
     for x in lista:
@@ -73,7 +68,27 @@ def calcula_pontos_sequencia_alta(lista):
 
     return 0
 
-        
+def calcula_pontos_full_house(lista):
+    valores = []
+    contagens = []
+
+    for x in lista:
+        if x not in valores:
+            valores.append(x)
+            contagens.append(1)
+        else:
+            for i in range(len(valores)):
+                if valores[i] == x:
+                    contagens[i] =+ 1
+
+    if len(contagens) == 3:
+        if (contagens[0] == 3 and contagens[1] == 2) or (contagens[0] == 2 and contagens[1] == 3):
+            soma = 0
+            for x in lista:
+                soma = soma + 1 
+            return soma
+
+    return 0
 
 
 
