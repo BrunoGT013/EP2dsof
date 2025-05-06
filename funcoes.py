@@ -92,7 +92,7 @@ def calcula_pontos_full_house(lista):
 
 def calcula_pontos_quadra(lista):
     for x in lista:
-        contador = 1
+        contador = 0
         for y in lista:
             if x == y:
                 contador += 1
