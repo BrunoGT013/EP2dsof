@@ -95,7 +95,7 @@ def calcula_pontos_quadra(lista):
         contador = 1  
 
         for y in lista:
-            if x = y: 
+            if x == y: 
                 contador = contador + 1
 
         if contador > 4:  
