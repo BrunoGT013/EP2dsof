@@ -90,4 +90,20 @@ def calcula_pontos_full_house(lista):
 
     return 0
 
+def calcula_pontos_quadra(lista):
+    for x in lista:
+        contador = 1  
+
+        for y in lista:
+            if x = y: 
+                contador = contador + 1
+
+        if contador > 4:  
+            soma = 0
+            for z in lista:
+                soma += 1 
+            return soma
+    
+    return
+
 
