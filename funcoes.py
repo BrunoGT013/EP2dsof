@@ -111,7 +111,7 @@ def calcula_pontos_quina(lista):
             if x == y:  
                 contador = contador + 1
 
-        if contador > 5:  
+        if contador >= 5:  
             return 50
 
     return 0
