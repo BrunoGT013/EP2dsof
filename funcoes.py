@@ -105,7 +105,7 @@ def calcula_pontos_quadra(lista):
 
 def calcula_pontos_quina(lista):
     for x in lista:
-        contador = 1  
+        contador = 0
 
         for y in lista:
             if x == y:  
