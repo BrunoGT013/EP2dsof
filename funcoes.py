@@ -34,12 +34,20 @@ def calcula_pontos_soma(dados):
     return total
 
 
-def calcula_pontos_sequencia_baixa(dados):
-    if 1 == dados and 2 == dados and 3 == dados and 4 == dados:
-        return 15
-    else:
-        return 0
-
+# def calcula_pontos_sequencia_baixa(dados):
+#     if 1 == dados and 2 == dados and 3 == dados and 4 == dados:
+#         return 15
+#     else:
+#         return 0
+def calcula_pontos_sequencia_baixa(lista):
+    v = []
+    v = sorted(lista)
+    for i in range(len(v)-3):
+        if len(v)<4:
+            return 0
+        if v[i] == v[i+1]-1 and v[i+1] == v[i+2]-1 and v[i+2] == v[i+3]-1:
+            return 15
+        
 
 
 
