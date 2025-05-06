@@ -27,3 +27,8 @@ def calcula_pontos_regra_simples(dados):
     return pontos
 
 
+def calcula_pontos_soma(dados):
+    return sum(dados)
+
+
+
