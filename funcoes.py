@@ -41,12 +41,18 @@ def calcula_pontos_soma(dados):
 #         return 0
 def calcula_pontos_sequencia_baixa(lista):
     v = []
-    v = sorted(lista)
-    for i in range(len(v)-3):
-        if len(v)<4:
-            return 0
-        if v[i] == v[i+1]-1 and v[i+1] == v[i+2]-1 and v[i+2] == v[i+3]-1:
+    for x in lista:
+        if x not in v:
+            v.append(x)
+    v = sorted(v)
+    if len(v) < 4:
+        return 0
+    for i in range(len(v) - 3):
+        if v[i] == v[i+1] - 1 and v[i+1] == v[i+2] - 1 and v[i+2] == v[i+3] - 1:
             return 15
+
+    return 0
+
         
 
 
