@@ -19,4 +19,11 @@ def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
     final = [dados_rolados, dados_no_estoque]
     return final
 
+def calcula_pontos_regra_simples(dados):
+    pontos = {i: 0 for i in range(1, 7)}
+    for dado in dados:
+        if 1 <= dado <= 6:
+            pontos[dado] += dado
+    return pontos
+
 
