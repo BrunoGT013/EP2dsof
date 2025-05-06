@@ -8,6 +8,7 @@ def rolar_dados(quantidade):
 
 
 def guardar_dado(lista_rolados, lista_estoque, indice_dado):
-    dado_escolhido = lista_rolados[indice_dado]
+    dado_escolhido = lista_rolados.pop(indice_dado)
     lista_estoque.append(dado_escolhido)
     return [lista_rolados, lista_estoque]
+
