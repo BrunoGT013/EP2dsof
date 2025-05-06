@@ -12,3 +12,10 @@ def guardar_dado(lista_rolados, lista_estoque, indice_dado):
     lista_estoque.append(dado_escolhido)
     return [lista_rolados, lista_estoque]
 
+
+def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
+    dado_removido = dados_no_estoque.pop(dado_para_remover)
+    dados_rolados.append(dado_removido)
+    return [dados_rolados, dados_no_estoque]
+
+
