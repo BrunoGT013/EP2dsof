@@ -34,5 +34,12 @@ def calcula_pontos_soma(dados):
     return total
 
 
+def calcula_pontos_sequencia_baixa(dados):
+    if 1 == dados and 2 == dados and 3 == dados and 4 == dados:
+        return 15
+    else:
+        return 0
+
+
 
 
