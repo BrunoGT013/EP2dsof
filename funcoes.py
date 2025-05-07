@@ -140,3 +140,6 @@ def faz_jogada(dados, categoria, cartela_de_pontos):
         cartela_de_pontos['regra_avancada'][categoria] = pontos[categoria]
 
     return cartela_de_pontos
+
+
+#ex12 justificado por comites chamados de ex 11
