@@ -128,11 +128,12 @@ def calcula_pontos_regra_avancada(lista):
 
 def faz_jogada(dados, categoria, cartela_de_pontos):
     if categoria in cartela_de_pontos['regra_simples']:
-        pontos = calcula_pontos_regra_simples(dados)  
-        cartela_de_pontos['regra_simples'][categoria] = pontos[int(categoria)]
+        pontos = calcula_pontos_regra_simples(dados)
+        categoria_int = int(categoria)
+        cartela_de_pontos['regra_simples'][categoria_int] = pontos[categoria_int]
 
-    elif categoria in cartela_de_pontos['regra_avancada']:  
-        pontos = calcula_pontos_regra_avancada(dados)  
+    elif categoria in cartela_de_pontos['regra_avancada']:
+        pontos = calcula_pontos_regra_avancada(dados)
         cartela_de_pontos['regra_avancada'][categoria] = pontos[categoria]
 
     return cartela_de_pontos
